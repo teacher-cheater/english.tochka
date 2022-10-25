@@ -2,10 +2,41 @@
 @import "null.scss";
 
 //fonts-----------------
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("MuseoSansCyrl"), url("./MuseoSansCyrl-300.ttf") format("truetype"),
+    url("./fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
+/* 500 */
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("MuseoSansCyrl"),
+    url("./fonts/MuseoSansCyrl-500.ttf") format("truetype"),
+    url("./fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/MuseoSansCyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* 700 */
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("MuseoSansCyrl"),
+    url("../fonts/MuseoSansCyrl-700.ttf") format("truetype"),
+    url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
   line-height: 1;
-  font-family: "Gilroy", "Gilroy-bold";
+  font-family: "MuseoSansCyrl";
 }
 //.wrapper {
 //  min-height: 100%;
@@ -16,6 +47,7 @@ body {
 /* ------------------------------ */
 .main {
   flex-grow: 1;
+  font-family: "MuseoSansCyrl";
 }
 
 [class*="__container"] {

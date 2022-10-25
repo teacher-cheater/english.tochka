@@ -1,45 +1,55 @@
 .main {
   background: #f0f0f0;
-  // .main__container
-
-  &__container {
-  }
+  font-family: "MuseoSansCyrl";
 
   // .main__content
-
   &__content {
   }
 
   // .main__items
-
   &__items {
     display: flex;
     flex-wrap: wrap;
     gap: 83px;
     padding: 60px 70px 90px;
+    @media (max-width: 991.98px) {
+      gap: 63px;
+      padding: 50px 60px 75px;
+    }
+    /* Условные мобилки */
+    @media (max-width: 767.98px) {
+      gap: 45px;
+      padding: 20px 30px 45px;
+    }
+    @media (max-width: 424.98px) {
+      gap: 25px;
+      padding: 5px 10px;
+    }
   }
 }
 .items {
   // .items__right
-
   &__right {
     background: rgba(106, 106, 106, 0.08);
     padding: 16px 38px;
+    @media (max-width: 1223.98px) {
+      //width: 100%;
+      margin: 0 auto;
+    }
   }
 
   // .items__text
-
   &__text {
-    font-family: "Museo Sans Cyrl";
     font-size: 22px;
+    font-weight: 500;
     line-height: 13px;
     text-align: center;
     color: #242424;
     margin-bottom: 26px;
+    font-family: "MuseoSansCyrl";
   }
 
   // .items__block-info
-
   &__block-info {
     display: flex;
     gap: 6px;
@@ -48,44 +58,49 @@
   &__image {
     width: 40px;
   }
-  // .items__currency
 
+  // .items__currency
   &__currency {
+    font-family: "MuseoSansCyrl";
     font-size: 52px;
     line-height: 43px;
     text-align: center;
     color: #242424;
     font-weight: 600;
   }
+
   &__cur {
     img {
       width: 46px;
       height: 38px;
     }
   }
-  // .items__left
 
+  // .items__left
   &__left {
     background: rgba(106, 106, 106, 0.08);
     padding: 16px 30px;
+    @media (max-width: 1223.98px) {
+      margin: 0 auto;
+    }
   }
+
   &__block {
     display: flex;
     gap: 20px;
     justify-content: space-between;
   }
-  // .items__title
 
+  // .items__title
   &__title {
     font-size: 22px;
     font-weight: 600;
-    line-height: 59%;
+    line-height: 1.2;
     color: #242424;
     margin-bottom: 30px;
   }
 
   // .items__link
-
   &__link {
     font-weight: 300;
     font-size: 9px;
@@ -95,23 +110,23 @@
   }
 
   // .items__choices
-
   &__choices {
     gap: 45px;
   }
 }
+
 .item {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 10px 0;
-  // .item__course
+  align-items: flex-end;
 
+  // .item__course
   &__course {
     margin: 0 auto;
   }
 
   // .item__title
-
   &__title {
     margin-bottom: 5px;
     span {
@@ -124,25 +139,25 @@
   }
 
   &__image {
-    width: 18px;
-    //height: auto;
-    //vertical-align: baseline;
+    width: 20px;
+    vertical-align: sub;
   }
 
   &__sign {
     vertical-align: baseline;
   }
-  // .item__icon
 
+  // .item__icon
   &__icon {
+    margin-bottom: 8px;
   }
 
   // .item__text
-
   &__text {
+    font-family: "MuseoSansCyrl";
+    flex-wrap: nowrap;
     font-weight: 400;
     font-size: 12px;
-    //line-height: 2;
     color: #242424;
     display: flex;
     gap: 5px;
@@ -162,7 +177,6 @@
   }
 
   // .item__link-sale
-
   &__link-sale {
     font-size: 14px;
     line-height: 1.14;
@@ -174,14 +188,13 @@
     flex: 1 1 auto;
     align-items: center;
     text-align: center;
-    align-self: end;
     letter-spacing: 0.15px;
-    text-transform: uppercase;
     padding: 5px 12px;
     cursor: pointer;
     max-width: 135px;
   }
 }
+
 .active {
   color: #fff;
   background: #00cd52;
