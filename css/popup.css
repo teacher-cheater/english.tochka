@@ -1,0 +1,74 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: #fff;
+  color: #000;
+  max-width: 477px;
+  padding: 60px 64px 37px;
+  position: relative;
+}
+
+.popup__close {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+
+.popup__title {
+  color: #242424;
+  font-family: "MuseoSansCyrl";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 130%;
+  margin-bottom: 22px;
+}
+
+.popup__text p {
+  margin-bottom: 45px;
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #242424;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__content {
+  -webkit-transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+          transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+  opacity: 1;
+}

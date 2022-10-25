@@ -2,10 +2,6 @@
   background: #f0f0f0;
   font-family: "MuseoSansCyrl";
 
-  // .main__content
-  &__content {
-  }
-
   // .main__items
   &__items {
     display: flex;
@@ -33,7 +29,6 @@
     background: rgba(106, 106, 106, 0.08);
     padding: 16px 38px;
     @media (max-width: 1223.98px) {
-      //width: 100%;
       margin: 0 auto;
     }
   }
