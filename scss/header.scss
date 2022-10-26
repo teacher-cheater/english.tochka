@@ -1,0 +1,41 @@
+.header {
+  padding: 40px 0 20px;
+  background: #f0f0f0;
+
+  // .header__form
+  &__form {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  // .header__input
+  &__input {
+    padding: 7px 12px;
+    color: #242424;
+    border-radius: 5px;
+  }
+
+  // .header__button
+  &__button {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: #000;
+    background: #fece00;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    padding: 5px 12px;
+    cursor: pointer;
+    max-width: 135px;
+    &:hover {
+      color: #fff;
+      background: #00cd52;
+      transition: all 0.4s ease-in 0s;
+    }
+  }
+}
