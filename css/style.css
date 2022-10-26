@@ -258,19 +258,9 @@ h6 {
   font-size: inherit;
 }
 
-img {
-  vertical-align: top;
-}
-
 html,
 body {
   height: 100%;
-}
-
-html {
-  /* по умолчанию */
-  font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 .popup {
@@ -304,7 +294,7 @@ html {
 }
 
 .popup__content {
-  background-color: #fff;
+  background: #edeef0;
   color: #000;
   max-width: 477px;
   padding: 60px 64px 37px;
@@ -315,6 +305,29 @@ html {
   position: absolute;
   right: 30px;
   top: 25px;
+}
+
+.popup__close span {
+  width: 18px;
+  height: 0.9px;
+  background-color: #9c958f;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popup__close span::before {
+  content: "";
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 18px;
+  height: 0.9px;
+  background-color: #9c958f;
+  position: absolute;
+  top: 0;
 }
 
 .popup__title {
@@ -340,12 +353,6 @@ html {
 .popup.open {
   opacity: 1;
   visibility: visible;
-}
-
-.popup.open .popup__content {
-  -webkit-transform: perspective(600px) translate(0px, 0%) rotate(0deg);
-          transform: perspective(600px) translate(0px, 0%) rotate(0deg);
-  opacity: 1;
 }
 
 @font-face {

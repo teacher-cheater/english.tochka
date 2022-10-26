@@ -5,7 +5,7 @@ const closePopupButton = document.querySelector('.close-popup'); //Кнопка 
 
 openPopupButtons.forEach((button) => { // Перебор кнопок
   button.addEventListener('click', (e) => { //события на клик
-    e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+    e.preventDefault();
     popupBg.classList.add('open'); //add класс 'open' для фона
     popup.classList.add('open');
   })
