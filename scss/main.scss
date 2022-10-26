@@ -1,6 +1,6 @@
 .main {
   background: #f0f0f0;
-  font-family: "MuseoSansCyrl";
+  font-family: "MuseoSansCyrl", sans-serif;
 
   // .main__items
   &__items {
@@ -12,7 +12,6 @@
       gap: 63px;
       padding: 50px 60px 75px;
     }
-    /* Условные мобилки */
     @media (max-width: 767.98px) {
       gap: 45px;
       padding: 20px 30px 45px;
@@ -23,6 +22,7 @@
     }
   }
 }
+
 .items {
   // .items__right
   &__right {
@@ -41,7 +41,7 @@
     text-align: center;
     color: #242424;
     margin-bottom: 26px;
-    font-family: "MuseoSansCyrl";
+    //font-family: "MuseoSansCyrl", sans-serif;
   }
 
   // .items__block-info
@@ -56,7 +56,7 @@
 
   // .items__currency
   &__currency {
-    font-family: "MuseoSansCyrl";
+    //font-family: "MuseoSansCyrl", sans-serif;
     font-size: 52px;
     line-height: 43px;
     text-align: center;
@@ -149,7 +149,6 @@
 
   // .item__text
   &__text {
-    font-family: "MuseoSansCyrl";
     flex-wrap: nowrap;
     font-weight: 400;
     font-size: 12px;
@@ -157,6 +156,7 @@
     display: flex;
     gap: 5px;
     margin-bottom: 10px;
+    justify-content: center;
     span {
       display: flex;
       color: #fff;
